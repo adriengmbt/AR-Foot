@@ -1,0 +1,47 @@
+.team {
+    background-color: $color-secondary;
+    height: 100%;
+    width: 100%;
+    color: $color-primary;
+
+    &__title {
+        margin: 0;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    &__card-container {
+        @include flex-wrap-center;
+        gap: 1rem;
+        padding-bottom: 5rem;
+
+
+        @include desktop {
+            gap: 3rem;
+        }
+    }
+
+    &__card-title {
+        margin : 0;
+    }
+    
+    &__card-img {
+        height: 5rem;
+        width: 5rem; 
+        object-fit: cover;
+        border-radius: $full-rad;
+
+        @include desktop {
+            height: 7rem;
+            width: 7rem;
+        }
+    }
+
+    &__card-text {
+        width: 10rem;
+        font-size: $xxs-sz;
+        @include desktop {
+            font-size: $xs-sz;
+        }
+    }
+}

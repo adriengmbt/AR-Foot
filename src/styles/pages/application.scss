@@ -1,0 +1,57 @@
+.application {
+    background: url("../../../public/Img/background/Design\ sans\ titre\ \(12\).png") no-repeat center/cover;
+    width: 100%;
+
+    @include desktop {
+        height: 70vh;
+    }
+
+    @include mid-desktop {
+        height: 80vh;
+    }
+
+    &__container {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+        color: $color-primary;
+
+        @include mid-desktop {
+            height: 100%;
+            gap : 0;
+
+        }
+    }
+
+    &__title {
+        font-size: $xl-sz;
+        font-weight: $semi-bold;
+        text-align: center;
+        padding: 0 $xl-mg;
+        color: $color-secondary;
+
+        @include mid-desktop {
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    }
+    &__first-card {
+        background: url("../../../public/Img/card/firstCard.jpg") no-repeat center/cover;
+    }
+
+    &__second-card {
+        background: url("../../../public/Img/card/secondCard.jpg") no-repeat center/cover;
+    }
+
+    &__third-card {
+        background: url("../../../public/Img/card/ThirdCard.jpg") no-repeat center/cover;
+    }
+
+    &__card-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: space-evenly;
+    }
+}

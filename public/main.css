@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cormorant+Unicase:wght@300&display=swap");
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  height: 10vh;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__title {
+  font-size: 1.3rem;
+}
+.header__img {
+  width: 2rem;
+}
+
+.navbar__container {
+  align-items: center;
+  background: url("../../../public/Img/background/background-nav.png") no-repeat center/cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 35%;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0vh;
+  transition: 0.3s;
+  width: 100%;
+  transform: translateY(40vh);
+  z-index: 100;
+}
+.navbar__close {
+  display: none;
+}
+.navbar__button {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  padding: 0.5rem;
+}
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .navbar__list {
+    flex-direction: row;
+    gap: 5rem;
+    font-size: 1.3rem;
+  }
+}
+
+.card {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 4.5rem;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    height: 22rem;
+    width: 17rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    height: 25rem;
+    width: 20rem;
+  }
+}
+.card__title {
+  font-size: 1.3rem;
+}
+@media only screen and (min-width: 1440px) {
+  .card__title {
+    font-size: 1.7rem;
+  }
+}
+.card__container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0) 30%, #000);
+}
+.card__text {
+  font-size: 0.7rem;
+}
+@media only screen and (min-width: 1440px) {
+  .card__text {
+    font-size: 1rem;
+  }
+}
+.card__first-text {
+  color: white;
+}
+@media only screen and (min-width: 1440px) {
+  .card__first-text {
+    font-size: 1.3rem;
+  }
+}
+
+.home {
+  height: 90vh;
+  width: 100%;
+  background: url("../../../public/Img/background/Design sans titre (11).png") no-repeat center/cover;
+}
+.home__container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .home__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home__content {
+    display: grid;
+    gap: 4rem;
+    height: 100%;
+  }
+}
+.home__text-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .home__text-container {
+    width: 35rem;
+  }
+}
+.home__img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .home__img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+.home__title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+@media only screen and (min-width: 1024px) {
+  .home__title {
+    font-size: 3rem;
+  }
+}
+.home__text {
+  color: white;
+  margin-bottom: 0;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .home__text {
+    font-size: 1.7rem;
+  }
+}
+.home__download {
+  display: grid;
+  place-items: center;
+  color: white;
+}
+@media only screen and (min-width: 1024px) {
+  .home__download {
+    color: black;
+    align-content: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}
+.home__apk {
+  border: 1px solid white;
+  padding: 0 0.8rem;
+  border-radius: 0.6rem;
+}
+@media only screen and (min-width: 1024px) {
+  .home__apk {
+    border: 2px solid black;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home__img-container {
+    display: grid;
+    justify-items: center;
+  }
+}
+.home__img-text {
+  font-weight: 500;
+  color: #266340;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .home__img-text {
+    font-size: 1.5rem;
+  }
+}
+
+.application {
+  background: url("../../../public/Img/background/Design sans titre (12).png") no-repeat center/cover;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .application {
+    height: 70vh;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .application {
+    height: 80vh;
+  }
+}
+.application__container {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  color: #FFFAEB;
+}
+@media only screen and (min-width: 1440px) {
+  .application__container {
+    height: 100%;
+    gap: 0;
+  }
+}
+.application__title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 1rem;
+  color: #266340;
+}
+@media only screen and (min-width: 1440px) {
+  .application__title {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+}
+.application__first-card {
+  background: url("../../../public/Img/card/firstCard.jpg") no-repeat center/cover;
+}
+.application__second-card {
+  background: url("../../../public/Img/card/secondCard.jpg") no-repeat center/cover;
+}
+.application__third-card {
+  background: url("../../../public/Img/card/ThirdCard.jpg") no-repeat center/cover;
+}
+.application__card-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+
+.team {
+  background-color: #266340;
+  height: 100%;
+  width: 100%;
+  color: #FFFAEB;
+}
+.team__title {
+  margin: 0;
+  text-align: center;
+  padding: 3rem 0;
+}
+.team__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .team__card-container {
+    gap: 3rem;
+  }
+}
+.team__card-title {
+  margin: 0;
+}
+.team__card-img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .team__card-img {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+.team__card-text {
+  width: 10rem;
+  font-size: 0.7rem;
+}
+@media only screen and (min-width: 1024px) {
+  .team__card-text {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

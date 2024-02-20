@@ -1,0 +1,50 @@
+.card {
+    height: 20rem;
+    width: 15rem;
+    border-radius: 4.5rem;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+
+    @include desktop {
+        height: 22rem;
+        width: 17rem;
+    }
+    
+    @include mid-desktop {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    &__title {
+        font-size: $s-sz;
+        @include mid-desktop {
+            font-size: $l-sz;
+        }
+    }
+
+    &__container {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        text-align: center;
+        padding: 0 $xl-pd;
+        background: linear-gradient(#0000 30%,#000);
+
+    }
+    &__text {
+        font-size: $xxs-sz;
+        @include mid-desktop {
+            font-size: $xs-sz;
+        }
+    }
+
+    &__first-text {
+        color: white;
+        @include mid-desktop {
+            font-size: $s-sz;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.home {
+    height: 90vh;
+    width: 100%;
+    background: url("../../../public/Img/background/Design\ sans\ titre\ \(11\).png") no-repeat center/cover;
+    
+    &__container {
+        display: grid;
+        place-items: center;
+        height: 100%;
+
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    }
+
+    &__content {
+        @include desktop {
+        display: grid;
+        gap: 4rem;
+        height: 100%;
+        }
+    }
+    &__text-container {
+        display: grid;
+        place-items: center;
+        text-align: center;
+
+        @include desktop {
+            width: 35rem;
+        }
+    }
+
+    &__img {
+        height: 15rem;
+        width: 15rem; 
+        object-fit: cover;
+        border-radius: $full-rad;
+        @include desktop {
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+
+    &__title {
+        font-size: $xl-sz;
+        font-weight: $semi-bold;
+        color: white;
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        color: white;
+        margin-bottom: 0;
+        padding:0 $xxxl-mg;  
+        
+        @include desktop {
+            font-size: $l-sz;
+        }
+    }
+
+    &__download {
+        display: grid;
+        place-items: center;
+        color: white;
+
+        @include desktop {
+            color: black;
+            align-content: center;
+            font-size: $l-sz;
+            font-weight: $bold;
+        }
+
+
+    }
+    &__apk {
+        border : 1px solid white;
+        padding: 0 $s-pd;
+        border-radius: $m-rad;
+        @include desktop {
+            border : 2px solid black;
+            font-size: $m-sz;
+            
+        }
+        }
+
+    &__img-container {
+        @include desktop {
+            display: grid;
+            justify-items: center;
+        }
+        
+    }
+    
+    &__img-text {
+        font-weight: 500;
+        color: $color-secondary;
+        text-align: center;
+        @include desktop {
+            font-size: $m-sz;
+        }
+    }
+}
