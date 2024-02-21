@@ -3,7 +3,6 @@ import { NavBar } from "../components/NavBar";
 import Logo from "../../public/Img/icon/logo.png";
 import Menu from "../../public/Img/icon/menu.png";
 
-import { Slide } from 'react-reveal';
 import { NavbarList } from "../components/NavbarList";
 
 

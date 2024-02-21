@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide } from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 import { NavbarList } from './NavbarList';
 
 
@@ -8,7 +8,7 @@ export function NavBar ({ isOpened, toggleNav }) {
     return (
         <nav className={isOpened ? "navbar" : "navbar__close"}>
 
-            <Slide top >
+            <Fade top >
             <div className="navbar__container">
                 <div className="navbar__button" onClick={toggleNav}>
                     X
@@ -16,7 +16,7 @@ export function NavBar ({ isOpened, toggleNav }) {
                 <NavbarList />
 
             </div>
-            </Slide>
+            </Fade>
             
            
 
