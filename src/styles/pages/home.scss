@@ -1,12 +1,19 @@
 .home {
-    height: 90vh;
     width: 100%;
-    background: url("../../../public/Img/background/Design\ sans\ titre\ \(11\).png") no-repeat center/cover;
+    background: url("../../../public/Img/background/home-background.png") no-repeat center/cover;
+    height: 100%;
+
+    @include desktop {
+        padding-bottom: 6rem;
+        padding-top: 2rem;
+    }
+
     
     &__container {
         display: grid;
         place-items: center;
         height: 100%;
+        gap: 3rem;
 
         @include desktop {
             display: flex;
@@ -68,23 +75,30 @@
         display: grid;
         place-items: center;
         color: white;
+        margin-top: 3rem;
 
         @include desktop {
             color: black;
             align-content: center;
             font-size: $l-sz;
             font-weight: $bold;
+            height: 50%;
+            margin-top: 0;
         }
 
 
     }
     &__apk {
-        border : 1px solid white;
         padding: 0 $s-pd;
         border-radius: $m-rad;
+        display: flex;
+        flex-direction: column;
+        gap: $s-mg;
+        
         @include desktop {
-            border : 2px solid black;
             font-size: $m-sz;
+            flex-direction: row;
+
             
         }
         }

@@ -6,7 +6,7 @@ export function Home() {
   return (
    <>
         <Header />
-        <section className="home">
+        <section id="home" className="home">
             <div className="home__container">
 
                 <div className="home__content">
@@ -19,10 +19,15 @@ export function Home() {
                     </div>               
                     <div className="home__download">
                         <p>
-                            Télécharger gratuitement notre application ici !
+                            Télécharger gratuitement notre application !
                         </p>
                         <div className="home__apk">
-                            <p>Cliquez ci-contre</p>
+                            <button className="button">
+                                <a href="">Télécharger l'image target ici </a>
+                            </button>
+                            <button className="button">
+                                <a href="">Télécharger l'apk ici </a>
+                            </button>
                         </div>
 
                     </div>

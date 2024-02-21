@@ -5,7 +5,7 @@ import Img4 from "../../public/Img/Team/mayel.jpg";
 
 export function Team() {
   return (
-    <div className="team">
+    <section id="team" className="team">
         <div className="team__container">
             <h1 className="team__title">Voici la Team AR Foot</h1>
 
@@ -43,6 +43,6 @@ export function Team() {
 
 
         </div>
-    </div>
+    </section>
   )
 }

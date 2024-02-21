@@ -1,13 +1,9 @@
 .application {
-    background: url("../../../public/Img/background/Design\ sans\ titre\ \(12\).png") no-repeat center/cover;
+    background: url("../../../public/Img/background/application-background.png") no-repeat center/cover;
     width: 100%;
 
     @include desktop {
-        height: 70vh;
-    }
-
-    @include mid-desktop {
-        height: 80vh;
+        padding:10rem 0;
     }
 
     &__container {
